@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="logo">Salman<span>.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#cv-section">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn-theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">Welcome to my portfolio</span>
+                <h1>I'm <span class="gradient-text">Salman Ghani</span></h1>
+                <h3 class="role">Aspiring Businessman & Data Analyst</h3>
+                <p class="bio">
+                    Computer Science Student at <strong>UET Peshawar</strong>. I blend technical skills with business strategy to solve real-world problems. Passionate about Data Analytics and Creative Design.
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/salmanghany" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/salmanghany?igsh=cTk3M3pvbm55NDk0" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:sak.9.op@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary">Hire Me</a>
+                    <a href="#cv-section" class="btn-secondary">View CV</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="img-box">
+                    <img src="profile.jpg" alt="Salman Ghani">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+            <div class="table-container glass">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Institute</th>
+                            <th>Degree / Level</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody id="academic-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv-section" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+            <div class="cv-wrapper glass">
+                <iframe src="cv.pdf" class="cv-frame"></iframe>
+                <div class="cv-actions">
+                    <a href="cv.pdf" download="Salman_Ghani_CV.pdf" class="btn-primary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <div class="contact-box glass">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label>Your Name</label>
+                        <small class="error-msg" id="name-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label>Your Email</label>
+                        <small class="error-msg" id="email-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label>Your Message</label>
+                        <small class="error-msg" id="msg-error"></small>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed by Salman Ghani &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
